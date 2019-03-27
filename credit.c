@@ -1,4 +1,9 @@
-// Program to get a credit card number from user, check if the number is valid, and return the credit card type for valid credit card numbers
+/*
+ * Author: PJ Pokhrel
+ * Purpose: Program to get a credit card number from a user, check if the number is valid using Luhn's algorithm, 
+ and return the credit card type for valid credit card numbers
+ * Language:  C
+ */
 
 #include <stdio.h>
 #include <cs50.h>
@@ -115,7 +120,7 @@ bool validate_checksum(long n)
     // Add the two sums from the calculation in the while loop above
     total_sum = first_sum + second_sum;
     
-    // get the last digit in the total sum
+    // Get the last digit in the total sum
     int last_digit = total_sum % 10;
     
     if (last_digit == 0)
